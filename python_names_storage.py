@@ -27,7 +27,7 @@ try:
   credentials = service_account.Credentials.from_service_account_info(credentials_dict)
   storage_client = storage.Client(credentials=credentials)
   bucket = storage_client.get_bucket('artists_names') ### Nome do seu bucket
-  blob = bucket.blob('artist-names.csv')
+  blob = bucket.blob('storage.csv')
 
   pages = []
   names = "Name \n"
